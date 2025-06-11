@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="scooo.png" alt="" /></a>
+        <p class="altyn">Altynsarin School</p>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Қабілетті оушылар</h1>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+      <h1>Мектеп ұстанымы</h1>
+      <p>
+        Оқыту процесінде қалай болса солай оқытпай - ғылым, білім беру жүйесі
+        сақталу керек.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Білім</h3>
+          <p>Бұл заман білекке сенетін емес, білімге сенетін заман.</p>
+        </div>
+        <div class="course-col">
+          <h3>Тәртіп</h3>
+          <p>
+            Қай істің болсын өнуіне үш шарт бар: ең әуелі – ниет керек, одан соң
+            – күш керек, одан соң – тәртіп керек.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Тәрбие</h3>
+          <p>
+            Жалғыз білім үйретуге емес, біліммен бірге жақсы тәрбиені қоса беру
+            керек.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+
+    <section class="facilities">
+      <h1>Біздің Мүмкіндіктер</h1>
+      <p>Мектеп қабілетсіздік пен жалқаулықтың ұясына айналмауы тиіс.</p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="114.jpg" alt="" />
+          <h3>Кітапхана</h3>
+          <p>Жақсы кітап — ақылды адамның әңгімесімен бірдей.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="voleybal.jpg" alt="" />
+          <h3>Спорт</h3>
+          <p>Шынықсаң, шымыр боларсың!</p>
+        </div>
+        <div class="facilities-col">
+          <img src="өөб.jpg" alt="" />
+          <h3>ЖасStar волонтерлік ұйымы</h3>
+          <p>Жақсы ой мен жақсы сөз - жақсы істерге жетелейді.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>Ybyrai Altynsarin</h4>
+      <p>
+        Қашанда бір істі істегіңіз келсе, ол іске әуелі ақылыңызды, одан соң
+        қолыңызды жұмылдырыңыз, егер де ақылыңыз дұрыстаса, <br />
+        көзіңіз көріп, жөнін тауып мақұл көрсе, тіліңіз бен қолыңызға ерік
+        беріңіз.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Assem & Nurdaulet</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

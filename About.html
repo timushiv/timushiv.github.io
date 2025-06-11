@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="scooo.png" alt="" /></a>
+        <p class="altyn">Altynsarin School</p>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Мектеп жайлы</h1>
+    </section>
+
+    <section class="our_services" id="our">
+      <div class="our_services_top">
+        <h1>Мектеп басшылығы</h1>
+      </div>
+
+      <div class="our_service_content">
+        <div class="service_card">
+          <img src="гүлданаапай.jpg" alt="f" />
+          <h3>Алиева Гүлдана</h3>
+          <p>Мектеп директорының оқу ісі жөніндегі орынбасары</p>
+        </div>
+
+        <div class="service_card">
+          <img src="сергалиагай.jpg" alt="f" />
+          <h3>Мәлікайдаров Серғали Өмірзақұлы</h3>
+          <p>Мектеп директоры</p>
+        </div>
+
+        <div class="service_card">
+          <img src="рауанагай.jpg" alt="f" />
+          <h3>Назаров Рауан</h3>
+          <p>Мектеп директорының оқу ісі жөніндегі орынбасары</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Contant -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>«Оқу-білім бұлағы, Білім-өмір шырағы»</h1>
+          <p>
+            Өмірдің шамшырағы білім күні дүниежүзі барша адамзат баласына ортақ
+            күн. Бұл күнді бүкіл әлем болып білім табалдырығын салтанапен
+            аттайды. Ыбырай Алтынсарин атындағы жалпы орта мектебінде білім күні
+            көтеріңкі көңіл-күймен аталып өтті. Салтанатты жиында Қазақстан
+            Республикасының Мемлекеттік туы енгізіліп, әнұран орындалды. Мектеп
+            директоры С.Мәлікайдаров жас бүлдіршіндерді алғашқы қадамдарымен
+            құттықтап, бірқатар ұстаздарды марапаттады. Облыстық департаменттің
+            бас маманы Ширманбаева Турганкул Шериевна, аудандық мәслихаттың
+            төрағасы Жәмиев Ордабек Мырзабекұлы сөз сөйлеп, ұстаздар мен
+            оқушыларға жаңа оқу жылында сәттілік тіледі. Алғашқы қоңырау
+            «Мектебім-мейірім мекенім» атты сынып сағаттарымен жалғасын тапты.
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="конырау.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>Ybyrai Altynsarin</h4>
+      <p>
+        Қашанда бір істі істегіңіз келсе, ол іске әуелі ақылыңызды, одан соң
+        қолыңызды жұмылдырыңыз, егер де ақылыңыз дұрыстаса, <br />
+        көзіңіз көріп, жөнін тауып мақұл көрсе, тіліңіз бен қолыңызға ерік
+        беріңіз.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Assem & Nurdaulet</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

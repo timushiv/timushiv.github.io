@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="scooo.png" alt="" /></a>
+        <p class="altyn">Altynsarin School</p>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Байланыс</h1>
+    </section>
+
+    <!-- Contact Us -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.6065685717017!2d69.16985903925489!3d43.75954538483112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4206f8ddbe575d39%3A0xbcb51bb8d13fd84e!2z0J7QodCoINC40Lwu0Ksu0JDQu9GC0YvQvdGB0LDRgNC40L3QsA!5e0!3m2!1sru!2skz!4v1681040187444!5m2!1sru!2skz"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Абылайхан көшесі, №1</h5>
+              <p>Созақ, Шолаққорған, KZ</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>4-26-47</h5>
+              <p>Дүйсенбі - Жұма, 9AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>Altinsarin2010@mail.ru</h5>
+              <p>Поштаны қолдансаңыз болады</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Есіміңіз" required />
+            <input type="email" placeholder="Email пошта" required />
+            <input type="text" placeholder="Сыныбыңыз" required />
+            <textarea rows="8" placeholder="Хабарлама" required></textarea>
+            <button type="submit" class="hero-btn red-btn">
+              Хабарламаны жіберу
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>Ybyrai Altynsarin</h4>
+      <p>
+        Қашанда бір істі істегіңіз келсе, ол іске әуелі ақылыңызды, одан соң
+        қолыңызды жұмылдырыңыз, егер де ақылыңыз дұрыстаса, <br />
+        көзіңіз көріп, жөнін тауып мақұл көрсе, тіліңіз бен қолыңызға ерік
+        беріңіз.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Assem & Nurdaulet</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
