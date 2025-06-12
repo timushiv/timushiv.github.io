@@ -16,6 +16,25 @@
   position: relative;
 }
 
+.search-bar {
+  margin-left: 20px;
+}
+
+.search-bar input {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 150px;
+  transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+
 nav {
   display: flex;
   padding: 2% 6%;
