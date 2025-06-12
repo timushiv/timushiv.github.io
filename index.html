@@ -237,5 +237,24 @@
         navLinks.style.right = "-200px";
       }
     </script>
+
+     <script>
+  function searchRedirect(event) {
+    event.preventDefault(); // Форманың автоматты жіберілуін тоқтату
+    var searchValue = document.getElementById("searchInput").value.toLowerCase().trim();
+    var redirectMap = {
+      "blog": "blog.html",
+      "home": "index.html",
+      "about": "About.html",
+      "course": "course.html",
+      "contact": "contact.html"
+    };
+    if (redirectMap[searchValue]) {
+      window.location.href = redirectMap[searchValue];
+    } else {
+      alert("Бұл бет табылмады! Тек 'blog', 'home', 'about', 'course' немесе 'contact' іздеуге болады.");
+    }
+  }
+</script>
   </body>
 </html>
